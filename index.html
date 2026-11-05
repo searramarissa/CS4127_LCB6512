@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Home page -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Makes the page fit phone screens -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Visit Brunei</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1>Visit Brunei Darussalam</h1>
+<nav id="nav">
+<a href="index.html" class="current">Home</a>
+<a href="discover.html" >Discover Brunei</a>
+<a href="attractions.html" >Attractions</a>
+<a href="plan.html" >Plan Your Visit</a>
+<a href="events.html" >Events</a>
+<a href="contact.html" >Contact</a>
+</nav>
+<div class="tools">
+  <button id="menuBtn">Menu</button>
+  <button id="themeBtn">Dark / Light</button>
+</div>
+</header>
+
+<div class="banner">
+  <img src="images/banner.jpg" alt="Brunei Darussalam" />
+</div>
+
+<main>
+<section class="container page-section">
+  <h2>Welcome to Brunei Darussalam</h2>
+  <p>Brunei, "the Abode of Peace", is a small country on the island of Borneo in Southeast Asia. It is known for golden mosques, a village built on the river and some of the best-preserved rainforest in the region.</p>
+  <p>Reasons to visit: safe and friendly streets, rich Malay Islamic culture, delicious local food and easy access to nature.</p>
+  <p>Quick facts: Capital: Bandar Seri Begawan | Currency: Brunei dollar | Languages: Malay and English.</p>
+  <p>Click a photo to enlarge it.</p>
+
+  <!-- Gallery: clicking a picture opens the lightbox (see script.js) -->
+  <div class="gallery">
+    <div class="image"><img src="images/brunei1.jpg" alt="Omar Ali Saifuddien Mosque"></div>
+    <div class="image"><img src="images/brunei2.jpg" alt="Kampong Ayer water village"></div>
+    <div class="image"><img src="images/brunei3.jpg" alt="Ulu Temburong rainforest"></div>
+  </div>
+</section>
+
+<!-- Lightbox pop-up, hidden until a photo is clicked -->
+<div id="lightbox"><img id="bigImage" src="" alt=""></div>
+</main>
+
+<footer>
+<p>Ministry of Tourism, Brunei Darussalam</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

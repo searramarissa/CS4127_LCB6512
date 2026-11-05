@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Contact page -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Makes the page fit phone screens -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Visit Brunei</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1>Visit Brunei Darussalam</h1>
+<nav id="nav">
+<a href="index.html" >Home</a>
+<a href="discover.html" >Discover Brunei</a>
+<a href="attractions.html" >Attractions</a>
+<a href="plan.html" >Plan Your Visit</a>
+<a href="events.html" >Events</a>
+<a href="contact.html" class="current">Contact</a>
+</nav>
+<div class="tools">
+  <button id="menuBtn">Menu</button>
+  <button id="themeBtn">Dark / Light</button>
+</div>
+</header>
+
+<div class="banner">
+  <img src="images/banner.jpg" alt="Brunei skyline with the golden mosque dome" />
+</div>
+
+<main>
+<section class="container page-section">
+  <h2>Contact Us</h2>
+  <p>If you have any questions about visiting Brunei, please send us an enquiry using the form below.</p>
+
+  <!-- novalidate: our JavaScript checks the form instead (see script.js) -->
+  <form id="enquiry" novalidate>
+    <div class="field">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="enter your full name">
+      <p class="error" id="nameError"></p>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" placeholder="name@example.com">
+      <p class="error" id="emailError"></p>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+      <p class="error" id="messageError"></p>
+    </div>
+    <button type="submit">Send</button>
+    <p id="result" role="status"></p>
+  </form>
+
+  <p>For official contact details, visit the <a href="https://www.bruneitourism.com/">Brunei Tourism website</a>.</p>
+</section>
+</main>
+
+<footer>
+<p>Ministry of Tourism, Brunei Darussalam</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
